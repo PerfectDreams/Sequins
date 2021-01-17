@@ -21,7 +21,7 @@ abstract class BaseRoute(val path: String) {
     abstract suspend fun onRequest(call: ApplicationCall)
 
     fun register(routing: Routing) = registerWithPath(routing, path) { onRequest(call) }
-    fun registerX(routing: Routing) = registerWithPath(routing, path) { onRequest(call) }
+    fun registerWithPath(routing: Routing, path: String) = registerWithPath(routing, path) { onRequest(call) }
 
     fun registerWithPath(routing: Routing, path: String, callback: PipelineInterceptor<Unit, ApplicationCall>) {
         val method = getMethod()
