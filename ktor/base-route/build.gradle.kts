@@ -4,7 +4,16 @@ plugins {
 }
 
 group = "net.perfectdreams.sequins.ktor"
-version = "1.0.1"
+version = "1.0.2"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
+}
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
