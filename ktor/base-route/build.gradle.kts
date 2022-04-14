@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "net.perfectdreams.sequins.ktor"
-version = "1.0.3"
+version = "1.0.4"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -17,5 +17,5 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("io.ktor:ktor-server-core:1.5.0")
+    implementation("io.ktor:ktor-server-core:2.0.0")
 }
