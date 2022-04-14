@@ -41,11 +41,3 @@ kotlin {
         }
     }
 }
-
-publishing {
-    publications {
-        register("PerfectDreams", MavenPublication::class.java) {
-            from(components["java"])
-        }
-    }
-}
