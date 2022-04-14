@@ -1,11 +1,10 @@
 plugins {
     kotlin("multiplatform")
-    kotlin("plugin.serialization") version "1.4.21"
     `maven-publish`
 }
 
 group = "net.perfectdreams.sequins.text"
-version = "1.0.1"
+version = "1.0.2"
 
 repositories {
     mavenCentral()

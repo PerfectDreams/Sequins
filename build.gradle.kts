@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.4.21"
+    kotlin("multiplatform") version "1.6.20"
     `maven-publish`
 }
 
@@ -16,12 +16,7 @@ kotlin {
 
 allprojects {
     repositories {
-        maven("https://dl.bintray.com/kotlin/kotlin-eap")
-        maven("https://dl.bintray.com/kotlin/kotlinx/")
         mavenCentral()
-        jcenter()
-        maven("https://dl.bintray.com/kotlin/ktor")
-        maven("https://dl.bintray.com/kotlin/exposed/")
     }
 }
 
